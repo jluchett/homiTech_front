@@ -5,7 +5,8 @@ function App() {
 
   return (
     <>
-      <h1>Mi pagina Web</h1>
+      
+      
     </>
   )
 }
