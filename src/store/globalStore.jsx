@@ -1,12 +1,7 @@
 import { create } from 'zustand';
 
 const useStore = create((set) => ({
-  cart: [],
-  favorites: [],
   
-  addToCart: (product) => set((state) => ({
-    cart: [...state.cart, product],
-  })),
 
   removeFromCart: (productId) => set((state) => ({
     cart: state.cart.filter(product => product.id !== productId),
@@ -17,6 +12,10 @@ const useStore = create((set) => ({
       ? state.favorites.filter(fav => fav.id !== product.id)
       : [...state.favorites, product],
   })),
+  cartItems: [],
+  favorites: [],
+  addToCart: (item) => set((state) => ({ cartItems: [...state.cartItems, item] })),
+  addToFavorites: (item) => set((state) => ({ favorites: [...state.favorites, item] })),
 }));
 
 export default useStore;
