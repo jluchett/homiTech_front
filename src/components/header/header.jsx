@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
-//import './Header.css';
+import './header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faShoppingCart, faHeart, faUser } from '@fortawesome/free-solid-svg-icons';
 import  useStore  from '../../store/globalStore'; // Zustand store
+import Logo from '../../assets/Homitech.png'
 
 const Header = () => {
   const cartItems = useStore((state) => state.cartItems);
@@ -14,7 +15,7 @@ const Header = () => {
         {/* Logo */}
         <div className="logo">
           <Link to="/">
-            <img src="" alt="Homitech Logo" className="logo-img" />
+            <img src={Logo} alt="Homitech Logo" className="logo-img" />
           </Link>
         </div>
 

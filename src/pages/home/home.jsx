@@ -1,7 +1,11 @@
-const Home = ()=>{
-  return(
+import './home.css'
+
+const Home = () => {
+  return (
     <>
-      <h1>Pagina Home</h1>
+      <div className="home-container">
+        <h1>Pagina Home</h1>
+      </div>
     </>
   )
 }

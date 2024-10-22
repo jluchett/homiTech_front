@@ -1,11 +1,17 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+/* Asegúrate de que el body ocupe el 100% de la ventana */
+html, body {
+  height: 100%;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; /* Puedes cambiar esto por la fuente que prefieras */
+}
+
+/* Esto se asegurará que el contenido del body no tenga ningún margen adicional */
 body {
-  line-height: 1.5;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
-
-
