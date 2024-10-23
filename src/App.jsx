@@ -11,6 +11,7 @@ import Profile from './pages/profile/profile';
 import Login from './pages/login/login';
 import Header from './components/header/header';
 import './App.css'
+import Footer from './components/footer/footer';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/login" element={<Login />} />
         </Routes>
+        <Footer />
       </Router>
     </>
   );
