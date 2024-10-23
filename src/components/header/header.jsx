@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import './header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faShoppingCart, faHeart, faUser } from '@fortawesome/free-solid-svg-icons';
-import  useStore  from '../../store/globalStore'; // Zustand store
+import useStore from '../../store/globalStore'; // Zustand store
 import Logo from '../../assets/Homitech.png'
 
 const Header = () => {
@@ -17,12 +17,16 @@ const Header = () => {
           <Link to="/">
             <img src={Logo} alt="Homitech Logo" className="logo-img" />
           </Link>
+          <div className="text-container">
+            <h1 className="site-title">HOMITECH</h1>
+            <p className="site-slogan">SMART HOME DEVICES</p>
+          </div>
         </div>
 
         {/* Navigation */}
         <nav className="navbar">
           <ul className="nav-links">
-            <li><Link to="/">Inicio</Link></li>
+            <li><Link to="/">Outlet</Link></li>
             <li><Link to="/products">Productos</Link></li>
             <li><Link to="/categories">Categorías</Link></li>
             <li><Link to="/contact">Contacto</Link></li>
@@ -51,7 +55,7 @@ const Header = () => {
             <FontAwesomeIcon icon={faUser} />
             <div className="user-dropdown">
               <Link to="/profile">Perfil</Link>
-              <Link to="/login">Iniciar Sesión</Link>
+              <Link to="/login">Login</Link>
             </div>
           </div>
         </div>

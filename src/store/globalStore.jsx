@@ -12,8 +12,8 @@ const useStore = create((set) => ({
       ? state.favorites.filter(fav => fav.id !== product.id)
       : [...state.favorites, product],
   })),
-  cartItems: [],
-  favorites: [],
+  cartItems: [1,1,1,1,11,1,1,1,1,1,1,1,1,1,11,1,1,1,1,1,1,1,1,],
+  favorites: [1],
   addToCart: (item) => set((state) => ({ cartItems: [...state.cartItems, item] })),
   addToFavorites: (item) => set((state) => ({ favorites: [...state.favorites, item] })),
 }));
