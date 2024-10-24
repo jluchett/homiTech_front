@@ -1,10 +1,12 @@
 //import './home.css'
 
+import HeroSection from "../../components/carousel/carousel";
+
 const Home = () => {
   return (
     <>
       <div className="home-container">
-        <h1>Pagina Home</h1>
+        <HeroSection />
       </div>
     </>
   )
