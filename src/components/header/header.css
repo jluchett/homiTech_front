@@ -57,6 +57,7 @@
 .navbar .nav-links li a {
   color: #ffffff;
   text-decoration: none;
+  transition: color 0.3s;
 }
 
 .navbar .nav-links li a:hover {
