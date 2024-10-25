@@ -16,6 +16,13 @@ const useStore = create((set) => ({
   favorites: [1],
   addToCart: (item) => set((state) => ({ cartItems: [...state.cartItems, item] })),
   addToFavorites: (item) => set((state) => ({ favorites: [...state.favorites, item] })),
+
+  currentSlide: 0,
+  isAutoplaying: true,
+  setCurrentSlide: (index) => set({ currentSlide: index }),
+  setAutoplaying: (value) => set({ isAutoplaying: value }),
+
+
 }));
 
 export default useStore;
