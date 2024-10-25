@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useEffect, useRef  } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -6,8 +7,9 @@ import useSliderStore from '../../store/sliderStore';
 import './carousel.css';
 
 // Importar imágenes
-import imagen1 from '../../assets/Fondo.jpg';
-import imagen2 from '../../assets/Homitech.png';
+import imagen1 from '../../assets/casa_inteligente_2.jpg';
+import imagen2 from '../../assets/smarthome.jpg';
+import imagen3 from '../../assets/homitech.jpg';
 
 const HeroSection = () => {
   const { currentSlide, setCurrentSlide, isAutoplaying, setAutoplaying } = useSliderStore();
@@ -25,7 +27,7 @@ const HeroSection = () => {
       link: '/ofertas',
     },
     {
-      image: imagen1,
+      image: imagen3,
       ctaText: 'Nuevas colecciones',
       link: '/colecciones',
     },
